@@ -1,4 +1,4 @@
-# ZIYON Token Smart Contract
+# ZIYON TOKEN SMART CONTRACT
 
 Este repositório contém o contrato inteligente para o token ZIYON (símbolo: ION), implementado no padrão BEP-20. O contrato é escrito em Solidity e utiliza bibliotecas e práticas recomendadas, como SafeMath, para garantir operações seguras e evitar transbordamento de valores. Ele foi projetado para ser flexível e seguro, com funcionalidades que incluem controle de transações e gestão de permissões.
 

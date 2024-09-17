@@ -1,38 +1,38 @@
 # ZIYON TOKEN SMART CONTRACT
 
-Este repositório contém o contrato inteligente para o token ZIYON (símbolo: ION), implementado no padrão BEP-20. O contrato é escrito em Solidity e utiliza bibliotecas e práticas recomendadas, como SafeMath, para garantir operações seguras e evitar transbordamento de valores. Ele foi projetado para ser flexível e seguro, com funcionalidades que incluem controle de transações e gestão de permissões.
+This repository contains the smart contract for the ZIYON token (symbol: ION), implemented using the BEP-20 standard. The contract is written in Solidity and uses libraries and best practices such as SafeMath to ensure secure operations and prevent overflow. It is designed to be flexible and secure, with features including transaction control and permission management.
 
-## Características principais
+## Key Features
 
-- **Padrão BEP-20**: O token segue as especificações do BEP-20, proporcionando compatibilidade com a Binance Smart Chain e outras plataformas que utilizam esse padrão.
-- **Total Supply**: O fornecimento total de tokens é fixado em 100 milhões, com 8 casas decimais.
-- **Controle de Permissões**: Funções de controle como `onlyOwner` permitem que apenas o proprietário do contrato execute operações críticas, como transferir a propriedade ou ajustar limites de transação.
-- **Máxima Quantidade de Transação**: O contrato impõe um limite de transação para evitar manipulações de mercado, definido em 100.000 tokens por transação.
-- **Segurança**: O contrato utiliza a biblioteca SafeMath para todas as operações aritméticas, garantindo a proteção contra overflow e underflow.
-- **Eventos de Transferência e Aprovação**: Suporte completo a eventos BEP-20, incluindo `Transfer` e `Approval`.
+- **BEP-20 Standard**: The token adheres to BEP-20 specifications, providing compatibility with the Binance Smart Chain and other platforms that use this standard.
+- **Total Supply**: The total token supply is fixed at 100 million, with 8 decimal places.
+- **Permission Control**: Control functions such as `onlyOwner` allow only the contract owner to execute critical operations, such as transferring ownership or adjusting transaction limits.
+- **Maximum Transaction Amount**: The contract imposes a transaction limit to prevent market manipulation, set at 100,000 tokens per transaction.
+- **Security**: The contract uses the SafeMath library for all arithmetic operations, ensuring protection against overflow and underflow.
+- **Transfer and Approval Events**: Full BEP-20 event support, including `Transfer` and `Approval`.
 
-## Funcionalidades Implementadas
+## Implemented Features
 
-- **totalSupply**: Retorna a quantidade total de tokens em circulação.
-- **decimals**: Retorna o número de casas decimais usadas pelo token.
-- **symbol**: Retorna o símbolo do token.
-- **name**: Retorna o nome do token.
-- **getOwner**: Retorna o endereço do proprietário do token.
-- **balanceOf**: Retorna o saldo de tokens de um determinado endereço.
-- **transfer**: Transfere tokens de um endereço para outro.
-- **approve** e **allowance**: Gerencia as permissões de um terceiro para gastar tokens em nome de outro endereço.
-- **transferFrom**: Permite transferências de tokens usando a permissão de terceiros.
+- **totalSupply**: Returns the total amount of tokens in circulation.
+- **decimals**: Returns the number of decimal places used by the token.
+- **symbol**: Returns the token symbol.
+- **name**: Returns the token name.
+- **getOwner**: Returns the address of the token owner.
+- **balanceOf**: Returns the token balance of a given address.
+- **transfer**: Transfers tokens from one address to another.
+- **approve** and **allowance**: Manages permissions for a third party to spend tokens on behalf of another address.
+- **transferFrom**: Allows token transfers using third-party permissions.
 
-## Configurações de Deploy
+## Deployment Settings
 
-O contrato já vem configurado com as seguintes propriedades predefinidas:
+The contract is pre-configured with the following default properties:
 
-- Nome do token: ZIYON
-- Símbolo do token: ION
-- Casas decimais: 8
-- Suprimento total: 100.000.000 ION
-- Quantidade máxima por transação: 100.000 ION
+- Token Name: ZIYON
+- Token Symbol: ION
+- Decimal Places: 8
+- Total Supply: 100,000,000 ION
+- Maximum Transaction Amount: 100,000 ION
 
-## Como Usar
+## How to Use
 
-Clone o repositório e implante o contrato usando qualquer ferramenta de desenvolvimento Solidity como Remix, Truffle ou Hardhat.
+Clone the repository and deploy the contract using any Solidity development tool such as Remix, Truffle, or Hardhat.
